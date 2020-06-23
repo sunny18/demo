@@ -1,14 +1,36 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+   "rulesSet":[
+      {
+         "id":1,
+         "title":"Products"
+      },
+      {
+         "id":2,
+         "title":"Items"
+      }
+   ],
+   "rules":[
+      {
+         "id":1,
+         "data":[
+            {
+               "field":"rent",
+               "value":"1000",
+               "operator":"lessThan",
+               "warningText":"rent is less than 1000"
+            }
+         ]
+      },
+      {
+         "id":2,
+         "data":[
+            {
+               "field":"age",
+               "value":"21",
+               "operator":"greaterThan",
+               "warningText":"age should be greater than 1000"
+            }
+         ]
+      }
+   ]
 }
